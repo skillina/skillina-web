@@ -1,12 +1,73 @@
+:root{
+    --base03: #002b36;
+    --base02: #073642;
+    --base01: #586e75;
+    --base00: #657b83;
+    --base0:  #839496;
+    --base1:  #93a1a1;
+    --base2:  #eee8d5;
+    --base3:  #fdf6e3;
+    --yellow: #b58900;
+    --orange: #cb4b16;
+    --red:    #dc322f;
+    --magenta:#d33682;
+    --violet: #6c71c4;
+    --blue:   #268bd2;
+    --cyan:   #2aa198;
+    --green:  #859900;
+}
+
 body {
-    background: #112233;
+    background: var(--base03);
     font-family: 'Open Sans', sans-serif;
-    color: #ccd3ee;
+    color: var(--base2);
 }
 
 #header {
+    margin-top: 24pt;
     font-size: 24pt;
     text-align: center;
+}
+
+#nav {
+    border-style: solid;
+    border-width: 1px;
+    border-color: var(--base2);
+    height: 26px;
+    width:800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.headerlink{
+    color:var(--base2);
+    text-decoration:none;
+}
+
+.navselected {
+    float: left;
+    width: 160px;
+    padding-top: 2.5pt;
+    padding-bottom: 2.5pt;
+    background: var(--base2);
+    color: var(--base02);
+    text-align: center;
+}
+
+.navunselected{
+    float: left;
+    width: 160px;
+    padding-top: 2.5pt;
+    padding-bottom: 2.5pt;
+    text-align: center;
+}
+
+.navselected:hover{
+    color: var(--blue);
+}
+
+.navunselected:hover {
+    color: var(--blue);
 }
 
 #content {
@@ -17,4 +78,88 @@ body {
 
 p {
     font-size: 12pt;
+}
+
+
+#palette{
+    width:800px;
+    margin-left:auto;
+    margin-right: auto;
+    height: 50px;
+}
+
+#base0{
+    float:left;
+    width: 100px;
+    height:50px;
+    background: var(--base0);
+}
+
+#base1{
+    float:left;
+    width: 100px;
+    height:50px;
+    background: var(--base1);
+}
+
+#base2{
+    float:left;
+    width: 100px;
+    height:50px;
+    background: var(--base2);
+}
+
+#base3{
+    float:left;
+    width: 100px;
+    height:50px;
+    background: var(--base3);
+}
+
+#base00{
+    float:left;
+    width: 100px;
+    height:50px;
+    background: var(--base00);
+}
+
+#base01{
+    float:left;
+    width: 100px;
+    height:50px;
+    background: var(--base01);
+}
+
+#base02{
+    float:left;
+    width: 100px;
+    height:50px;
+    background: var(--base02);
+}
+
+#base03{
+    float:left;
+    width: 100px;
+    height:50px;
+    background: var(--base03);
+}
+
+.project{
+    background: var(--base02);
+    width: 780px;
+    padding: 10px;
+}
+
+.projecttitle{
+    font-size: 14pt;
+    margin: 0px;
+}
+
+.projectgit{
+    color: var(--base1);
+    margin: 0px;
+}
+
+.gitlink{
+    color: var(--blue);
 }
