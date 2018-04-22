@@ -29,6 +29,7 @@ body{
     font-size: 32pt;
     font-family: "Helvetica";
     display: inline-block;
+    margin-bottom:50px;
 }
 
 a{
@@ -52,4 +53,32 @@ a{
     margin-left:auto;
     margin-right:auto;
     display: inline-block;
+}
+
+#school:hover #schoolcategory{
+    display:block;
+}
+
+#dev:hover #devcategory{
+    display:block;
+}
+
+#social:hover #socialcategory{
+    display:block;
+}
+
+#reddit:hover #redditcategory{
+    display:block;
+}
+
+#drive:hover #essentialcategory{
+    display: block;
+}
+
+.category{
+    display:none;
+}
+
+.column:hover{
+    display: block;
 }
